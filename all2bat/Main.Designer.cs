@@ -34,24 +34,26 @@
       // label1
       // 
       this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(43, 9);
+      this.label1.Location = new System.Drawing.Point(38, 9);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(84, 13);
+      this.label1.Size = new System.Drawing.Size(127, 13);
       this.label1.TabIndex = 0;
-      this.label1.Text = "Drop file on form";
+      this.label1.Text = "Drop file on form and wait";
       // 
       // Main
       // 
       this.AllowDrop = true;
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(179, 68);
+      this.ClientSize = new System.Drawing.Size(213, 82);
       this.Controls.Add(this.label1);
       this.MaximizeBox = false;
       this.MinimizeBox = false;
       this.Name = "Main";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "A2B";
+      this.TopMost = true;
+      this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
       this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Main_DragDrop);
       this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Main_DragEnter);
       this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
